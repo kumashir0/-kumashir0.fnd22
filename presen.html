@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="presen.css">
+  <script type="text/javascript" src="modules/lodash.js"></script>
+  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
+</head>
+
+<body>
+  <div class="box00" id="box00">
+    <label class="requestForm">PPES性能実証課依頼サイト</label>
+    <p class="dateNow" id="current-date"></p>
+
+    <label class="requestinfo">依頼元情報</label>
+    <label class="requesterInfo">依頼元会社&種類：</label>
+    <select class="company" id="dropdownCompany" name="dropdown">
+      <option></option>
+      <option>PPES試作・評価</option>
+      <option>PPES解析・構造</option>
+      <option>PPES合成</option>
+      <option>TMC試作・評価</option>
+      <option>TMC解析・構造</option>
+      <option>TMC合成</option>
+    </select>
+
+    <label class="requesterInfoG">依頼元Gr：</label>
+    <select class="requestergroup" id="requestergroupPPES">
+      <option></option>
+      <option>GB室1G</option>
+      <option>GB室2G</option>
+      <option>GE室</option>
+      <option>豊田_評価解析室</option>
+      <option>神戸_評価解析室</option>
+      <option>加西_評価解析室</option>
+      <option>セル開発部</option>
+      <option>65D Prj</option>
+      <option>40B Prj</option>
+    </select>
+    <select class="requestergroup" id="requestergroupTMC">
+      <option></option>
+      <option>TMC_BD</option>
+      <option>TMC_BV</option>
+    </select>
+
+    <label class="requesterinfo01">依頼者名：</label>
+    <input class="name" placeholder="名前を入力して下さい" id="name">
+
+    <label class="receiveinfo">依頼先情報</label>
+    <label class="receivegroup">組：</label>
+    <select class="receiveselectgroup" id="receiveselectgroup">
+      <option></option>
+      <option>11組</option>
+      <option>12組</option>
+      <option>21組</option>
+      <option>22組</option>
+    </select>
+
+    <label class="requestermonth">依頼月：</label>
+    <select class="receiveselectmonth" id="receiveselectmonth">
+      <option></option>
+      <option>1月</option>
+      <option>2月</option>
+      <option>3月</option>
+      <option>4月</option>
+      <option>5月</option>
+      <option>6月</option>
+      <option>7月</option>
+      <option>8月</option>
+      <option>9月</option>
+      <option>10月</option>
+      <option>11月</option>
+      <option>12月</option>
+    </select>
+
+
+    <label class="desireddeliverydate">希望納期：</label>
+    <input class="datepicker" type="date" id="datePicker" onchange="showSelectedDate()">
+
+    <input class="totalartificial" type="date" id="human" >
+    <input class="human" type="number" id="human" >
+    <input class="time" type="number" id="time" >
+    <input class="longdays" type="number" id="longdays" >
+    <label class="artificial">想定人工:</label>
+
+
+
+    <fieldset class="checkbox">
+      <input type="checkbox" id="checkbox1"><label for="checkbox1">電池解体</label>
+      <input type="checkbox" id="checkbox2"><label for="checkbox2">正極合成</label>
+      <input type="checkbox" id="checkbox3"><label for="checkbox3">負極合成</label>
+      <input type="checkbox" id="checkbox4"><label for="checkbox4">粉体物性</label>
+      <input type="checkbox" id="checkbox5"><label for="checkbox5">合材物性</label>
+      <input type="checkbox" id="checkbox6"><label for="checkbox6">部材物性</label>
+      <input type="checkbox" id="checkbox7"><label for="checkbox7">断面観察</label>
+      <input type="checkbox" id="checkbox8"><label for="checkbox8">衝撃・圧力測定</label>
+      <input type="checkbox" id="checkbox9"><label for="checkbox9">電位測定</label><br>
+      <input type="checkbox" id="checkbox10"><label for="checkbox10">抵抗測定</label>
+      <input type="checkbox" id="checkbox11"><label for="checkbox11">析出目視判断</label>
+      <input type="checkbox" id="checkbox12"><label for="checkbox12">発熱挙動測定</label>
+      <input type="checkbox" id="checkbox13"><label for="checkbox13">大型混錬</label>
+      <input type="checkbox" id="checkbox14"><label for="checkbox14">大型塗工</label>
+      <input type="checkbox" id="checkbox15"><label for="checkbox15">大型プレスリ</label>
+      <input type="checkbox" id="checkbox16"><label for="checkbox16">大型捲回</label><br>
+      <input type="checkbox" id="checkbox17"><label for="checkbox17">大型端子・封缶溶接</label>
+      <input type="checkbox" id="checkbox18"><label for="checkbox18">大型注液・活性化</label>
+      <input type="checkbox" id="checkbox19"><label for="checkbox19">大型保存評価</label>
+      <input type="checkbox" id="checkbox20"><label for="checkbox20">大型劣化評価</label>
+      <input type="checkbox" id="checkbox21"><label for="checkbox21">大型imp評価</label><br>
+      <input type="checkbox" id="checkbox22"><label for="checkbox22">大型走行パターン評価</label>
+      <input type="checkbox" id="checkbox23"><label for="checkbox23">小型混錬</label>
+      <input type="checkbox" id="checkbox24"><label for="checkbox24">小型塗工</label>
+      <input type="checkbox" id="checkbox25"><label for="checkbox25">小型プレス・切り出し</label>
+      <input type="checkbox" id="checkbox26"><label for="checkbox26">小型端子溶接</label>
+      <input type="checkbox" id="checkbox27"><label for="checkbox27">小型捲回・積層・単層</label><br>
+      <input type="checkbox" id="checkbox28"><label for="checkbox28">小型注液・拘束</label>
+      <input type="checkbox" id="checkbox29"><label for="checkbox29">小型初期特性</label>
+      <input type="checkbox" id="checkbox30"><label for="checkbox30">小型保存試験</label>
+      <input type="checkbox" id="checkbox31"><label for="checkbox31">小型耐久評価</label>
+      <input type="checkbox" id="checkbox32"><label for="checkbox32">リサイクル</label>
+    </fieldset>
+
+
+    <button class="send">送信</button>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="prezen.js"></script>
+
+</body>
+
+</html>
