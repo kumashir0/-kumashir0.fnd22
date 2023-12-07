@@ -1,0 +1,209 @@
+.box00 {
+    /* div 青枠 */
+    position: relative;
+    display: inline-flexbox;
+    width: 1000px;
+    background-color: rgb(207, 223, 227);
+    margin: 0 auto;
+    border: 10px solid rgba(0, 0, 108, 0.2);
+    height: 520px;
+}
+
+
+.requestForm {
+    /* label => 依頼書作製サイト */
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 1px rgb(9, 2, 107);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 200%;
+}
+
+.dateNow {
+    /* p => 日にち表示 */
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.requestinfo {
+    /* label => 依頼元情報 */
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 150%;
+}
+
+.requesterInfo {
+    /* label => 依頼会社＆種類 */
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.company {
+    /* select => 依頼種類選択 */
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+}
+
+.requesterInfoG {
+    /* label => 依頼元Gr: */
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.requestergroup {
+    /* select => グループ選択 */
+    /* display: none; */
+    opacity: 0.25;
+    position: absolute;
+    top: 20%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    width: 180px;
+}
+
+.requesterinfo01 {
+    /* label => 依頼者名 */
+    position: absolute;
+    top: 20%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.name {
+    /* input => 入力 */
+    position: absolute;
+    top: 20%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.receiveinfo {
+    /* label => 依頼先情報 */
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 150%;
+}
+
+.receivegroup {
+    /* label => 組 */
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.receiveselectgroup {
+    /* select => 組選択 */
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+}
+
+.requestermonth {
+    /* label => 依頼月： */
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.receiveselectmonth {
+    /* select => 依頼月選択 */
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+}
+
+.desireddeliverydate {
+    /* label => 希望納期： */
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.datepicker {
+    /* input => 希望納期： */
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+}
+
+.artificial{
+        /* label => 想定人工： */
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: large;
+}
+
+
+.checkbox {
+    /* input => 項目チェック： */
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: black; */
+    font-size: large;
+    width: 950px;
+    background-color: rgb(188, 215, 224);
+    /* transform: scale(1); */
+}
+
+.send {
+    /* 送信ボタン */
+    position: absolute;
+    bottom: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    border: 3px solid rgba(0, 0, 0);
+}
