@@ -12,7 +12,7 @@
 
 <body>
   <div class="box00" id="box00">
-    <label class="requestForm">PPES性能実証課依頼サイト</label>
+    <label class="requestForm">PPES性能実証課 依頼サイト</label>
     <p class="dateNow" id="current-date"></p>
 
     <label class="requestinfo">依頼元情報</label>
@@ -80,11 +80,16 @@
     <label class="desireddeliverydate">希望納期：</label>
     <input class="datepicker" type="date" id="datePicker" onchange="showSelectedDate()">
 
-    <input class="totalartificial" type="date" id="human" >
+    <label class="artificial">想定工数:</label>
     <input class="human" type="number" id="human" >
+    <label class="nin">人 ✖</label>
     <input class="time" type="number" id="time" >
+    <label class="Hr">Hr / 日 ✖</label>
     <input class="longdays" type="number" id="longdays" >
-    <label class="artificial">想定人工:</label>
+    <label class="nichi">日</label>
+    <button class="totalkosu" type="number" id="totalkosu" onclick="totalKosu()">計算</button>
+    <div class="totalartificial" id="totalartificial" ></div>
+    <label class="totaltime" id="Hr">Hr</label>
 
 
 
@@ -130,7 +135,7 @@
 
 
 
-  <script type="text/javascript" src="prezen.js"></script>
+  <script type="text/javascript" src="presen.js"></script>
 
 </body>
 
