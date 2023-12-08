@@ -36,7 +36,7 @@
 .requestinfo {
     /* label => 依頼元情報 */
     position: absolute;
-    top: 12%;
+    top: 14%;
     left: 10%;
     transform: translate(-50%, -50%);
     color: black;
@@ -46,7 +46,7 @@
 .requesterInfo {
     /* label => 依頼会社＆種類 */
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 10%;
     transform: translate(-50%, -50%);
     color: black;
@@ -56,16 +56,17 @@
 .company {
     /* select => 依頼種類選択 */
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 27%;
     transform: translate(-50%, -50%);
     font-size: 120%;
+    height: 30px;
 }
 
 .requesterInfoG {
     /* label => 依頼元Gr: */
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 43%;
     transform: translate(-50%, -50%);
     color: black;
@@ -74,20 +75,20 @@
 
 .requestergroup {
     /* select => グループ選択 */
-    /* display: none; */
     opacity: 0.25;
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 57%;
     transform: translate(-50%, -50%);
     font-size: 120%;
     width: 180px;
+    height: 30px;
 }
 
 .requesterinfo01 {
     /* label => 依頼者名 */
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 74%;
     transform: translate(-50%, -50%);
     color: black;
@@ -97,19 +98,20 @@
 .name {
     /* input => 入力 */
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 88%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 5px;
     width: 150px;
     border: 1px solid #ccc;
+    height: 20px;
 }
 
 .receiveinfo {
     /* label => 依頼先情報 */
     position: absolute;
-    top: 40%;
+    top: 36%;
     left: 10%;
     transform: translate(-50%, -50%);
     color: black;
@@ -119,7 +121,7 @@
 .receivegroup {
     /* label => 組 */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 4%;
     transform: translate(-50%, -50%);
     color: black;
@@ -129,16 +131,17 @@
 .receiveselectgroup {
     /* select => 組選択 */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 9%;
     transform: translate(-50%, -50%);
     font-size: 120%;
+    height: 30px;
 }
 
 .requestermonth {
     /* label => 依頼月： */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 18%;
     transform: translate(-50%, -50%);
     color: black;
@@ -148,16 +151,17 @@
 .receiveselectmonth {
     /* select => 依頼月選択 */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 25%;
     transform: translate(-50%, -50%);
     font-size: 120%;
+    height: 30px;
 }
 
 .desireddeliverydate {
     /* label => 希望納期： */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 35%;
     transform: translate(-50%, -50%);
     color: black;
@@ -165,23 +169,106 @@
 }
 
 .datepicker {
-    /* input => 希望納期： */
+    /* input => 希望納期入力 */
     position: absolute;
-    top: 50%;
-    left: 47%;
+    top: 45%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: large;
+    height: 20px;
+}
+
+.artificial {
+    /* label => 想定人工： */
+    position: absolute;
+    top: 45%;
+    left: 59%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: large;
 }
 
-.artificial{
-        /* label => 想定人工： */
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: large;
+.human {
+    /* input => 人数入力： */
+    position: absolute;
+    top: 45%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 20px;
+}
+
+.nin {
+    /* label => 人 */
+    position: absolute;
+    top: 45%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    /* input => 工数入力： */
+    position: absolute;
+    top: 45%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 20px;
+}
+
+.Hr {
+    /* label => Hr / 日 */
+    position: absolute;
+    top: 45%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+}
+
+.longdays {
+    /* input => 日数入力： */
+    position: absolute;
+    top: 45%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 20px;
+}
+
+.nichi {
+    /* label => 日 */
+    position: absolute;
+    top: 45%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+}
+
+.totalkosu {
+    /* button => 計算 */
+    position: absolute;
+    top: 53%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+}
+
+.totalartificial {
+    /* div => 合計工数表示 */
+    position: absolute;
+    top: 53%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    align-items: center;
+}
+
+.totaltime {
+    /* label => Hr */
+    position: absolute;
+    top: 53.5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
 }
 
 
@@ -191,11 +278,9 @@
     top: 73%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: black; */
     font-size: large;
     width: 950px;
     background-color: rgb(188, 215, 224);
-    /* transform: scale(1); */
 }
 
 .send {
