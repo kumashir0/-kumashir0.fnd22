@@ -11,7 +11,7 @@
 
 
 .requestForm {
-    /* label => 依頼書作製サイト */
+    /* label => 依頼サイト */
     position: absolute;
     top: 5%;
     left: 50%;
@@ -102,10 +102,12 @@
     left: 88%;
     transform: translate(-50%, -50%);
     text-align: center;
+    line-height: 2;
     padding: 5px;
     width: 150px;
     border: 1px solid #ccc;
     height: 20px;
+    font-size: 120%;
 }
 
 .receiveinfo {
@@ -283,6 +285,55 @@
     background-color: rgb(188, 215, 224);
 }
 
+.check {
+    /* 確認ボタン */
+    position: absolute;
+    bottom: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    border: 3px solid rgba(0, 0, 0);
+    background-color: white;
+}
+
+/* 確認場面 */
+
+.box01 {
+    /* div 青枠 */
+    position: relative;
+    display: none;
+    width: 1000px;
+    background-color: rgb(207, 223, 227);
+    margin: 0 auto;
+    border: 10px solid rgba(0, 0, 108, 0.2);
+    height: 520px;
+}
+
+.back {
+    /* 確認ボタン */
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    /* border: 3px solid rgba(0, 0, 0); */
+    background-color: transparent;
+}
+
+.emailContent {
+    /* メール内容 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 180%;
+    border: 3px solid rgba(0, 0, 0);
+    /* background-color: transparent; */
+    width: 950px;
+    height: 400px;
+}
+
+
 .send {
     /* 送信ボタン */
     position: absolute;
@@ -291,4 +342,5 @@
     transform: translate(-50%, -50%);
     font-size: 120%;
     border: 3px solid rgba(0, 0, 0);
+    background-color: white;
 }
