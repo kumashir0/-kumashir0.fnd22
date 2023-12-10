@@ -27,7 +27,7 @@
       <option>TMC合成</option>
     </select>
 
-    <label class="requesterInfoG">依頼元Gr：</label>
+    <label class="requesterInfoG">依頼元Gr:</label>
     <select class="requestergroup" id="requestergroupPPES">
       <option></option>
       <option>GB室1G</option>
@@ -47,7 +47,7 @@
     </select>
 
     <label class="requesterinfo01">依頼者名：</label>
-    <input class="name" placeholder="名前を入力して下さい" id="name">
+    <input class="name" placeholder="名前を入力" id="name">
 
     <label class="receiveinfo">依頼先情報</label>
     <label class="receivegroup">組：</label>
@@ -129,10 +129,20 @@
     </fieldset>
 
 
-    <button class="send">送信</button>
+    <button class="check" onclick="changePage()">✔確認</button>
   </div>
 
+  <div class="box01" id="box01">
+    <button class="back" onclick="changeBack()">↩戻る</button>
+  
+    <textarea class="emailContent" id="emailContent"></textarea>
 
+
+  
+  
+  
+    <button class="send" onclick="sendEmail()">✉送信</button>
+  </div>
 
 
   <script type="text/javascript" src="presen.js"></script>
