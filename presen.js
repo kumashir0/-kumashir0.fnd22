@@ -119,7 +119,7 @@ function changePage(){
     "     依頼月     : " + inputReceiveMonth + '\n' +
     "    希望納期    : " + inputDate + '\n' +
     "    想定工数    : " + inputTotalArtificial +
-    "Hr ( " + inputHuman + " 人 ✖ " + inputTime + " Hr/日 ✖ " + inputLongdays + " 日 " + ")" + '\n' +
+    "Hr ( " + inputHuman + " 人 ✖ " + inputTime + " Hr /日 ✖ " + inputLongdays + " 日 " + ")" + '\n' +
     "    選択項目    : " + checkedItems.join(', ');
 
 }
